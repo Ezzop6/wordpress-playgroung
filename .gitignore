@@ -1,0 +1,15 @@
+
+.env
+/mysql_data/
+
+/wordpress/*
+!/wordpress/wp-content/
+/wordpress/wp-content/*
+!/wordpress/wp-content/themes/
+/wordpress/wp-content/themes/*
+
+# add theme name
+!/wordpress/wp-content/themes/new_theme/
+
+**/node_modules/
+**/dist/
