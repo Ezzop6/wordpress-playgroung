@@ -1,0 +1,9 @@
+@import  "../variabless";
+
+.footer-menu {
+    border: $default-border;
+    border-radius: $default-border-radius;
+    & > ul > li{ // Items in footer menu
+        padding: $default-padding;
+    }
+}

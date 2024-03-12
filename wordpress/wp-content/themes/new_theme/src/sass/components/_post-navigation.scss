@@ -1,0 +1,14 @@
+.archive-navigation,
+.post-navigation {
+  display: flex;
+  justify-content: space-between;
+  & > div >a {
+    text-decoration: none;
+  }
+  .text-left {
+    text-align: left;
+  }
+    .text-right {
+        text-align: right;
+    }
+}

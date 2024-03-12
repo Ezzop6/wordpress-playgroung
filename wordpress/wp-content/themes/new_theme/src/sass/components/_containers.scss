@@ -1,0 +1,20 @@
+@import  "../variabless";
+
+.post-container{
+    margin: $default-margin;
+    padding: $default-margin;
+    border: $default-border;
+    border-radius: $default-border-radius;
+    min-height: 200px;
+    img {
+        float: left; 
+        padding: $default-margin;
+        border-radius: 10%;
+    }
+    p { 
+        overflow: auto; 
+    }
+    a {
+        text-decoration: none;
+    }
+}

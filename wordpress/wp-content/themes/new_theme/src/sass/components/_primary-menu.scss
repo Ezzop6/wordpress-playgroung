@@ -1,0 +1,23 @@
+@import  "../variabless";
+
+.main-menu {
+  display: flex;
+  gap: $item-gap;
+  ul {
+    margin: 0;
+    padding: 0;
+  }
+  li {
+    position: relative;
+  }
+  a {
+    display: block;
+  }
+  ul.sub-menu {
+    display: none;
+    position: absolute;
+  }
+  li:hover > ul.sub-menu {
+    display: block;
+  }
+}

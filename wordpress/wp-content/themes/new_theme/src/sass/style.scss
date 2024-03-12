@@ -1,1 +1,20 @@
-@import './components/primary_menu.scss';
+@import './reset.scss';
+@import './components/primary-menu.scss';
+@import './components/footer-menu.scss';
+@import './components/post-navigation.scss';
+@import './components/containers.scss';
+
+.custom-admin-info {
+    color: aqua;
+}
+
+body {
+    width: 100%;
+}
+
+@media (min-width: 768px) {
+    body {
+        width: 80%;
+        margin: 0 auto;
+    }
+}

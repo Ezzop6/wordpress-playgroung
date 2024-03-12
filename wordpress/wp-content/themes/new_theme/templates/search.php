@@ -6,4 +6,5 @@
 <?php else : ?>
   <h1>No Results</h1>
   <p>Sorry, no results were found.</p>
+
 <?php endif; ?>
