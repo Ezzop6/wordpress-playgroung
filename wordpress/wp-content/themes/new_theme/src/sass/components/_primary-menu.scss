@@ -1,4 +1,12 @@
-@import  "../variabless";
+@import  "../variables";
+
+.main-menu-container {
+  border: $default-border;
+  padding: $default-margin;
+  box-shadow: $border-shadow;
+  margin-bottom: $default-margin * 2;
+  background-color: $container-bg;
+  }
 
 .main-menu {
   display: flex;

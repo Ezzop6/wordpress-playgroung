@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "build": "webpack --mode production",
-    "dev": "webpack --mode development --watch"
+    "dev": "webpack --mode development --watch",
+    "build_css": "tailwindcss build -i src/tailwind_css.css -o dist/tailwind_css.css"
   },
   "keywords": [],
   "author": "",
@@ -20,6 +21,7 @@
     "sass": "^1.71.1",
     "sass-loader": "^14.1.1",
     "style-loader": "^3.3.4",
+    "tailwindcss": "^3.4.1",
     "ts-loader": "^9.5.1",
     "typescript": "^5.4.2",
     "webpack": "^5.90.3",

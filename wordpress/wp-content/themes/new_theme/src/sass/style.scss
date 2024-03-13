@@ -3,12 +3,14 @@
 @import './components/footer-menu.scss';
 @import './components/post-navigation.scss';
 @import './components/containers.scss';
+@import './components/fonts.scss';
 
 .custom-admin-info {
     color: aqua;
 }
 
 body {
+    background-color: $background;
     width: 100%;
 }
 

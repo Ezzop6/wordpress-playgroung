@@ -1,11 +1,12 @@
-@import  "../variabless";
+@import  "../variables";
 
 .post-container{
-    margin: $default-margin;
+    margin-bottom: $default-margin;
     padding: $default-margin;
     border: $default-border;
+    background-color: $container-bg;
     border-radius: $default-border-radius;
-    min-height: 200px;
+    min-height: 230px;
     img {
         float: left; 
         padding: $default-margin;
