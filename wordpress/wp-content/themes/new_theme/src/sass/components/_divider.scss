@@ -1,0 +1,32 @@
+@import  "../variables";
+
+.text-divider {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin:0 2rem;
+    &:before,
+    &:after {
+      content: '';
+      flex: 1;
+      border-bottom: 1px solid $border-color;
+    }
+    &:before {
+      margin-right: 1rem;
+    }
+    
+    &:after {
+      margin-left: 1rem;
+    }
+  }
+  
+.divider {
+    border: none;
+    margin: 0.5rem $default-padding ;
+
+    padding: calc($default-padding / 8);
+    border-top: 1px solid $border-color;
+}
+hr {
+  @extend .divider;
+}

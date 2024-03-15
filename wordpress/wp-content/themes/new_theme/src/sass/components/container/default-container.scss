@@ -1,0 +1,15 @@
+@import  "../../variables";
+
+.container-wrapper {
+    max-width: $max-container-width-post;
+    margin: 0 auto;
+    background-color: $container-bg;
+    padding: $default-padding;
+    box-shadow: $default-box-shadow;
+    border: $default-border;
+    & img {
+        padding: $default-margin;
+        max-height: auto;
+        width: 100%;
+    }
+}

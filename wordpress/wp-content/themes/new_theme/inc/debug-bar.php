@@ -17,7 +17,7 @@ function wpse8170_loop() { // WTF is this? https://wordpress.stackexchange.com/q
   $loop = 'not found other type';
 
   if ($wp_query->is_page) {
-    $loop = is_front_page() ? 'front' : 'page';
+    $loop = is_front_page() ? 'front-page' : 'page';
   } elseif ($wp_query->is_home) {
     $loop = 'home';
   } elseif ($wp_query->is_single) {

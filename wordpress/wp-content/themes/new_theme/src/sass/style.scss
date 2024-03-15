@@ -4,19 +4,20 @@
 @import './components/post-navigation.scss';
 @import './components/containers.scss';
 @import './components/fonts.scss';
+@import './components/main-page-container.scss';
+@import './components/divider.scss';
+@import './components/link-button.scss';
 
 .custom-admin-info {
     color: aqua;
 }
 
 body {
-    background-color: $background;
     width: 100%;
 }
-
-@media (min-width: 768px) {
-    body {
-        width: 80%;
-        margin: 0 auto;
-    }
+.align-left {
+    text-align: left;
+}
+.align-right {
+    text-align: right;
 }

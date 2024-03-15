@@ -1,0 +1,30 @@
+@import  "../../variables";
+@import "default-container";
+
+.post-container-wrapper {
+    max-width: $max-container-width-post;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    grid-gap: $default-padding;
+    padding-bottom: $default-padding * 5;
+}
+.post-container{
+    @extend .container-wrapper;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: $default-margin;
+    & img {
+        padding: $default-margin;
+        max-height: 200px;
+        width: auto;
+        object-fit: contain;
+    }
+    & p { 
+        color: $text-color-black-dark;
+    }
+    & a {
+        text-decoration: none;
+    }
+}

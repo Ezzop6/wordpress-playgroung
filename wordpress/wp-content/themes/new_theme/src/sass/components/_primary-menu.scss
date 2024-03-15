@@ -1,31 +1,51 @@
 @import  "../variables";
 
 .main-menu-container {
-  border: $default-border;
   padding: $default-margin;
-  box-shadow: $border-shadow;
-  margin-bottom: $default-margin * 2;
+  border-radius: $default-border-radius;
+  box-shadow: $default-box-shadow;
+  border: $default-border;
+  margin: $default-margin auto $default-margin;
   background-color: $container-bg;
+  max-width: $max-container-width;
+  display: flex;
+  justify-content: space-between;
   }
 
 .main-menu {
   display: flex;
+  align-self: center;
   gap: $item-gap;
-  ul {
-    margin: 0;
-    padding: 0;
+  & ul {
+    background-color: $container-bg;
+    display: flex;
+    border: $default-border;
+    border-radius: $default-border-radius;
+    padding: $default-padding;
+    transform: translate(-25%, 0);
+    z-index: 100;
   }
-  li {
+  & li {
     position: relative;
   }
-  a {
+
+  & a {
     display: block;
+    font-weight: bold;
   }
-  ul.sub-menu {
+  & ul.sub-menu {
     display: none;
     position: absolute;
   }
-  li:hover > ul.sub-menu {
+  & li:hover > ul.sub-menu {
     display: block;
+  }  
+}
+.custom-logo-link {
+  display: flex;
+  height: 100%;
+  & img {
+    max-height: 50px;
+    max-width: 100px;
   }
 }

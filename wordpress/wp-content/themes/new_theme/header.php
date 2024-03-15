@@ -10,8 +10,12 @@
 <div id="root"></div>
 
 <body <?php body_class(); ?>>
-
   <div class="main-menu-container">
+
+    <?php if (function_exists('the_custom_logo')) {
+      the_custom_logo();
+    } ?>
+
     <?php wp_nav_menu(array(
       'theme_location' => 'primary',
       'container' => false,

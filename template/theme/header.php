@@ -10,10 +10,12 @@
 <div id="root"></div>
 
 <body <?php body_class(); ?>>
+  <div class="bg-blue-500">
 
-  <?php wp_nav_menu(array(
-    'theme_location' => 'primary',
-    'container' => false,
-    'menu_class' => 'main-menu',
-  )); ?>
+    <?php wp_nav_menu(array(
+      'theme_location' => 'primary',
+      'container' => false,
+      'menu_class' => 'main-menu',
+    )); ?>
+  </div>
   </div>

@@ -1,0 +1,12 @@
+@import  "../variables";
+
+.main-page-container {
+    max-width: $max-container-width-post;
+    margin: 0 auto;
+    & p {
+        color: $text-color-black-light;
+        max-width: $max-container-width;
+        padding-top: $default-padding;
+        margin: 0 auto;
+    }
+}

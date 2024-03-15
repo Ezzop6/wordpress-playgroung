@@ -1,21 +1,2 @@
-@import  "../variables";
-
-.post-container{
-    margin-bottom: $default-margin;
-    padding: $default-margin;
-    border: $default-border;
-    background-color: $container-bg;
-    border-radius: $default-border-radius;
-    min-height: 230px;
-    img {
-        float: left; 
-        padding: $default-margin;
-        border-radius: 10%;
-    }
-    p { 
-        overflow: auto; 
-    }
-    a {
-        text-decoration: none;
-    }
-}
+@import "container/post-container";
+@import "container/default-container";

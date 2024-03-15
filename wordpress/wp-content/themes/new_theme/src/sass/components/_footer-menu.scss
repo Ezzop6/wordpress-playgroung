@@ -1,11 +1,17 @@
 @import  "../variables";
 
 .footer-menu {
-    border: $default-border;
-    border-radius: $default-border-radius;
     background-color: $container-bg;
-    margin-bottom: 4rem;
+    border-top: $default-border;
+    box-shadow: $default-box-shadow;
+    margin-top: $default-margin;
+    padding: $default-padding;
+    height: 100%;
     & > ul > li{ // Items in footer menu
         padding: $default-padding;
     }
+}
+.footer-info {
+    background-color: $container-bg;
+    color: $text-color-black-light;
 }

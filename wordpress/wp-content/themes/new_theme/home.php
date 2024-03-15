@@ -1,19 +1,23 @@
 <?php get_header() ?>
 
-<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
+<div class="post-container-wrapper">
+  <?php
+  $query_args = array(
+    'post_type' => 'post',
+    'posts_per_page' => '4',
+  );
+  $the_query = new WP_Query($query_args);
 
-    <div class="post-container">
-      <small><?php the_category(' '); ?> | <?php the_tags(); ?> | <?php edit_post_link(); ?></small>
-      <?php if (has_post_thumbnail()) {
-        get_template_part('components/post-thumbnail');
-      } ?>
-    </div>
+  if ($the_query->have_posts()) {
+    while ($the_query->have_posts()) {
+      $the_query->the_post();
+      get_template_part('components/post-thumbnail');
+    }
+    wp_reset_postdata();
+  } else {
+    // no posts found
+  } ?>
 
-  <?php endwhile;
-  get_template_part('components/post-navigation');
-else : ?>
-  <h1>No Results</h1>
-  <p>Sorry, no results were found.</p>
-<?php endif; ?>
+</div>
 
 <?php get_footer() ?>
