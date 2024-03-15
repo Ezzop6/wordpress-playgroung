@@ -10,6 +10,8 @@
 
 # add theme name
 !/wordpress/wp-content/themes/new_theme/
+!/wordpress/wp-content/themes/tail-test/
+
 
 **/node_modules/
 **/dist/
