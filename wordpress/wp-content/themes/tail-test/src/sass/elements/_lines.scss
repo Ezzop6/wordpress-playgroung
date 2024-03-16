@@ -1,0 +1,8 @@
+@import "../colors";
+@import "../globals";
+
+hr {
+  border: 0px solid $gray-900;
+  width: calc(100% - 2rem);
+  @apply border-0 border-t border-solid hidden lg:block;
+}

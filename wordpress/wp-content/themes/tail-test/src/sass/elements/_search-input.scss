@@ -1,0 +1,17 @@
+@import "../globals";
+
+.search-input {
+  @apply px-8 py-4 self-center;
+  & form input {
+    background-color: $gray-300;
+    box-shadow: $default-shadow;
+    color: $gray-950;
+    @apply px-2 py-1 rounded-md self-center border-2 border-blue-900 outline-none;
+  }
+  & form input:focus-visible {
+    @extend .search-input-fx;
+  }
+  & form input:not(:focus-visible) {
+    @extend .search-input-fx;
+  }
+}

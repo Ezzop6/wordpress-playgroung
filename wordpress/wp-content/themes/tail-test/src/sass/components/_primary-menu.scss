@@ -1,0 +1,26 @@
+@import "../globals";
+
+.header-container {
+  color: $gray-300;
+  background-color: $gray-950;
+  box-shadow: $default-shadow;
+  @apply flex md:px-10 py-3 justify-between;
+  & .btn {
+    @extend .link-hover-fx;
+    @apply px-2 py-1 rounded-md mx-2 my-5;
+  }
+  & ul {
+    @apply flex flex-row self-center;
+  }
+  & li {
+    @apply relative my-2;
+  }
+  & li ul {
+    background-color: $gray-950;
+    box-shadow: $default-shadow;
+    @apply flex-col absolute hidden right-[-1rem] p-2;
+  }
+  img {
+    @apply h-14 w-28;
+  }
+}

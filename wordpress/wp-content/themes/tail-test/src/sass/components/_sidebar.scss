@@ -1,0 +1,11 @@
+@import "../globals";
+
+.sidebar {
+  background-color: $gray-950;
+  box-shadow: $default-shadow;
+  @apply flex-col p-4 hidden xl:block min-w-[350px] max-w-[350px];
+
+  & .wp-block-search__input {
+    @apply rounded-md;
+  }
+}

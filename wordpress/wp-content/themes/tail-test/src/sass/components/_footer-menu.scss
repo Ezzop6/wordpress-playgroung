@@ -1,0 +1,12 @@
+@import "../globals";
+
+.footer-container {
+  background-color: $gray-950;
+  color: $gray-300;
+  box-shadow: $default-shadow;
+  @apply flex flex-col items-center justify-center;
+  & .copyright {
+    color: $gray-900;
+    @apply text-center;
+  }
+}

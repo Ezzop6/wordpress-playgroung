@@ -38,7 +38,14 @@ module.exports = {
       host: "localhost",
       port: 3000,
       proxy: "http://localhost:9000",
-      files: ["**/*.php"],
+      files: [
+        "**/*.php",
+        "**/*.css",
+        "**/*.js",
+        "**/*.scss",
+        "**/*.ts",
+        "**/*.tsx",
+      ],
     }),
   ],
 };
